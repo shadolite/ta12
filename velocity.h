@@ -24,4 +24,6 @@ public:
    void display() const;
 };
 
+Velocity operator + (const Velocity & lhs, const Velocity & rhs);
+Velocity & operator += (Velocity & lhs, const Velocity & rhs);
 #endif
