@@ -18,6 +18,14 @@ Velocity & operator += (Velocity & lhs, const Velocity & rhs)
 {
 	lhs.setDx(lhs.getDx() + rhs.getDx());
 	lhs.setDy(lhs.getDy() + rhs.getDy());
+
+}
+
+Velocity & operator -= (Velocity & lhs, const Velocity & rhs)
+{
+   lhs.dx -= rhs.dx;
+   lhs.dy -= rhs.dx;
+   return lhs;
 }
 
 

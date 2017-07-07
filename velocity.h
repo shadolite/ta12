@@ -22,8 +22,24 @@ public:
     **************************/
    void prompt();
    void display() const;
+
+   //Operators
+   inline friend Velocity operator - (const  Velocity & lhs, const Velocity & rhs)
+   {
+      Velocity v;
+      v.dx = lhs.dx - rhs.dx;
+      v.dy = lhs.dy - rhs.dy;
+      return v;
+   }
+
+   friend Velocity & operator -= (Velocity & lhs, const Velocity & rhs);
+
 };
+
+
 
 Velocity operator + (const Velocity & lhs, const Velocity & rhs);
 Velocity & operator += (Velocity & lhs, const Velocity & rhs);
+
+
 #endif
