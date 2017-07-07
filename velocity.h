@@ -39,5 +39,36 @@ public:
 Velocity operator + (const Velocity & lhs, const Velocity & rhs);
 Velocity & operator += (Velocity & lhs, const Velocity & rhs);
 
+inline bool operator == (const Velocity & lhs, const Velocity & rhs)
+{
+   return (lhs.getDx() < rhs.getDX() + 0.001 && lhs.getDX() > rhs.getDx() - 0.001
+           && lhs.getDy() < rhs.getDy() + 0.001 && lhs.getDy > rhs.getDy() - 0.001)
+}
+
+inline bool operator != (const Velocity & lhs, const Velocity & rhs)
+{
+   return (lhs.getDx() >= rhs.getDX() + 0.001 && lhs.getDX() <= rhs.getDx() - 0.001
+           && lhs.getDy() >= rhs.getDy() + 0.001 && lhs.getDy <= rhs.getDy() - 0.001)
+}
+
+inline bool operator > (const Velocity & lhs, const Velocity & rhs)
+{
+   return (lhs > rhs)
+}
+
+inline bool operator < (const Velocity & lhs, const Velocity & rhs)
+{
+   return (lhs < rhs)
+}
+
+inline bool operator >= (const Velocity & lhs, const Velocity & rhs)
+{
+   return (lhs >= rhs)
+}
+
+inline bool operator < (const Velocity & lhs, const Velocity & rhs)
+{
+   return (lhs <= rhs)
+}
 
 #endif

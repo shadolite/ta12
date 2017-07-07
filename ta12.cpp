@@ -74,7 +74,7 @@ void partIII(const Velocity &v1, const Velocity &v2)
 
 void stretchI(const Velocity &v1, const Velocity &v2)
 {
-/*
+
    if (v1 == v2)
       cout << "==\n";
 
@@ -94,7 +94,7 @@ void stretchI(const Velocity &v1, const Velocity &v2)
       cout << "<=\n";
 
    cout << endl;
-*/
+
 }
 
 void stretchII(const Velocity &v1, const Velocity &v2)
