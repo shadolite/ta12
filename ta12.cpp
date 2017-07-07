@@ -48,7 +48,7 @@ void partII(const Velocity &v1, const Velocity &v2)
 
 void partIII(const Velocity &v1, const Velocity &v2)
 {
-/*
+
    Point p;
    cout << "Enter a new point:\n";
    
@@ -69,7 +69,7 @@ void partIII(const Velocity &v1, const Velocity &v2)
    cout << "After that, adding v2 to p gives: " << p << endl;
    
    cout << endl;
-*/
+
 }
 
 void stretchI(const Velocity &v1, const Velocity &v2)

@@ -18,7 +18,7 @@ Velocity & operator += (Velocity & lhs, const Velocity & rhs)
 {
 	lhs.setDx(lhs.getDx() + rhs.getDx());
 	lhs.setDy(lhs.getDy() + rhs.getDy());
-
+	return lhs;
 }
 
 Velocity & operator -= (Velocity & lhs, const Velocity & rhs)
@@ -27,7 +27,6 @@ Velocity & operator -= (Velocity & lhs, const Velocity & rhs)
    lhs.dy -= rhs.dx;
    return lhs;
 }
-
 
 void Velocity :: prompt()
 {

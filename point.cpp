@@ -11,6 +11,13 @@
 #include "point.h"
 #include <cassert>
 
+Point & Point::operator += (const Velocity & rhs)
+{
+	this->x += rhs.getDx();
+	this->y += rhs.getDy();
+
+	return *this;
+}
 /******************************************
  * POINT : CONSTRUCTOR WITH X,Y
  * Initialize the point to the passed position

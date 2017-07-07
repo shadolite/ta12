@@ -13,6 +13,7 @@
 #define POINT_H
 
 #include <iostream>
+#include "velocity.h"
 
 /*********************************************
  * POINT
@@ -35,6 +36,8 @@ public:
    void setY(float y);
    void addX(float dx)      { setX(getX() + dx);     }
    void addY(float dy)      { setY(getY() + dy);     }
+
+   Point & operator += (const Velocity & rhs);
 
 private:
    float x;           // horizontal position

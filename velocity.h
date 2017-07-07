@@ -36,8 +36,6 @@ public:
 
 };
 
-
-
 Velocity operator + (const Velocity & lhs, const Velocity & rhs);
 Velocity & operator += (Velocity & lhs, const Velocity & rhs);
 
